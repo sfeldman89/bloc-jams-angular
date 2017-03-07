@@ -55,5 +55,5 @@
     
     angular
         .module('blocJams')
-        .directive('seekBar', ['$document', seekBar);
+        .directive('seekBar', ['$document', seekBar]);
 })();
