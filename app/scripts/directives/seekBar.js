@@ -28,7 +28,7 @@
       });
           
       attributes.$observe('max', function(newValue) {
-          scopema = newValue;
+          scope.max = newValue;
       });
           
       var percentString = function () {
@@ -46,7 +46,7 @@
         return {left: percentString()};
       };
           
-      scope.onClickSeekBar = function(event) {
+    scope.onClickSeekBar = function(event) {
         var percent = calculatePercent(seekBar, event);
         scope.value = percent * scope.max;
         notifyOnChange(scope.value);
